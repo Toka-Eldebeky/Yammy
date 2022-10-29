@@ -1,0 +1,107 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* <<<<Home Bage style>>>> */
+
+#sideBox {
+    height: 100vh;
+    width: 60px;
+    background-color: #f8f6f6;
+    position: fixed;
+    z-index: 88888;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+#outerBox {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    transform: translatex(-80%);
+    z-index: 88888;
+}
+
+#innerBox {
+    width: 80%;
+}
+
+.nav-item,
+.side-bar-logo {
+    padding-top: 25px;
+}
+
+.side-bar-toggle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.side-bar-toggle i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sidebar-social-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate( -50%);
+}
+
+.sidebar-social-icon i {
+    padding: 5px 0 0 0;
+}
+
+.side-bar-footer {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #999;
+}
+
+.inner-social-icon {
+    margin-bottom: 15px;
+}
+
+.inner-social-icon i {
+    padding: 5px 10px;
+    color: #212529;
+}
+
+
+/* <<<Categories Bage Style>>> */
+
+body#categoriesBody .mainDiv {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+body#categoriesBody .mainDiv:hover .category-overlay {
+    transform: translateY(-100%);
+}
+
+body#categoriesBody .category-overlay {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff7e;
+    transition: all 1s;
+    transform: translateY(100%);
+}
